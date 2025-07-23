@@ -648,21 +648,7 @@ creatividad. Unos motivos para seguir creciendo es mi familia y los conocimiento
 						<!-- heading -->
 						<h2>Contáctame</h2>
 					</div>
-					<div class="row">	
-						<div class="col-md-4 col-sm-4">
-							<!-- contact item -->
-							<div class="contact-item ">
-								<!-- big icon -->
-								<i class="fa fa-street-view"></i>
-								<!-- contact details  -->
-								<span class="contact-details">Avenida A Los Alamos, Arcos de San Minguel Polgono B #17</span>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<!-- contact item -->
-							<div class="contact-item ">
-								<!-- big icon -->
-								<i class="fa fa-wifi"></i>
+					
 								<!-- contact details  -->
 								<span class="contact-details">jacobo.granados26@gmil.com</span>
 							</div>
@@ -677,43 +663,44 @@ creatividad. Unos motivos para seguir creciendo es mi familia y los conocimiento
 							</div>
 						</div>
 					</div>
-					<!-- form content -->
-					<div class="form-content">
-  <p>¿Tienes alguna idea en mente? Escríbenos.</p>
-  <form action="https://formsubmit.co/jacobo.granados26@gmail.com" method="POST">
-    <div class="row">
-      <div class="col-md-6 col-sm-6">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Teléfono</label>
-          <input type="text" class="form-control" id="phone" name="phone" placeholder="Tu teléfono">
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-6">
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea class="form-control" id="message" name="message" rows="9" placeholder="Tu mensaje" required></textarea>
-        </div>
-      </div>
-    </div>
-
-    <!-- Configuración avanzada -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="Nuevo mensaje desde formulario">
-    <input type="hidden" name="_template" value="table">
-
-    <div class="text-center">
-      <button type="submit" class="btn btn-lg btn-theme">Enviar Mensaje</button>
-    </div>
-  </form>
-</div>
+					  <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Por favor ingresa tu nombre.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="email" type="email" placeholder="Correo electrónico" required="required" data-validation-required-message="Por favor igresa tu correo electrónico.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="phone" type="tel" placeholder="Teléfono" required="required" data-validation-required-message="Por favor ingresa tu número telefónico.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Por favor ingresa un mensaje."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Enviar mensaje" type="submit">Enviar mensaje</button>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
 
 																			
